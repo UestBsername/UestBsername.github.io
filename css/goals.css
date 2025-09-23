@@ -1,0 +1,76 @@
+.pitch {
+  text-align: center;
+  background: none;
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding: 60px 20px 20px 20px;
+  color: var(--txtclr);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.pitch div {
+  display: list-item;
+  justify-content: center;
+  gap: 4rem; /* optional spacing between lines */
+  flex-wrap: wrap; /* allows wrapping on small screens */
+}
+
+.pitch p {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.pitch a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: var(--txtclr);
+  border-top: 1px solid #222;
+  margin-top: 4rem;
+}
+
+.text {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  line-height: 1.6;
+  font-size: 1.2rem;
+  color: var(--txtclr);
+}
+
+.text h2 {
+  font-size: 2.5rem;
+  color: var(--red);
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.text p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  background-color: rgba(255, 255, 255, 0.03);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.highlight {
+  color: var(--red); /* or a bold red */
+  font-style: italic;
+}
+
+.text div {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
