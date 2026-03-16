@@ -1,18 +1,10 @@
 .pitch {
   text-align: center;
   background: none;
-  font-size: 2.5rem;
   font-weight: 700;
   padding: 60px 20px 20px 20px;
   color: var(--txtclr);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.pitch div {
-  display: list-item;
-  justify-content: center;
-  gap: 4rem; /* optional spacing between lines */
-  flex-wrap: wrap; /* allows wrapping on small screens */
 }
 
 .pitch p {
@@ -20,9 +12,9 @@
   font-size: 2rem;
 }
 
-.pitch a {
-  text-decoration: none;
-  color: inherit;
+.pitch .subline {
+  margin: 0;
+  font-size: 1rem;
 }
 
 footer {
@@ -44,15 +36,15 @@ footer {
 }
 
 .text h2 {
-  font-size: 2.5rem;
-  color: var(--red);
+  font-size: 2.4rem;
+  color: var(--txtclr);
   margin-bottom: 20px;
   text-align: center;
   letter-spacing: 1px;
 }
 
 .text p {
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto;
   font-size: 1.2rem;
   line-height: 1.6;

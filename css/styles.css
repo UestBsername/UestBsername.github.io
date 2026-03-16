@@ -41,14 +41,22 @@ body {
   background-size: auto 100%; /* fill height, crop horizontally */
 }
 
-
 .logo {
   max-width: 300px;
 }
 
-.contact-callout a {
+.back-arrow {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 2rem;
   text-decoration: none;
-  color: inherit;
+  color: var(--txtclr);
+  z-index: 20;
+}
+
+.back-arrow:hover {
+  color: var(--red);
 }
 
 @media (max-width: 600px) {

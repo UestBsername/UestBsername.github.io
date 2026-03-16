@@ -85,10 +85,11 @@ h1 {
 }
 
 .gallery img {
-  height: min(30vw, 200px); /* 30% of viewport width, max 200px */
-  width: auto;   /* maintain natural aspect ratio */
-  border-radius: 10px;
+  width: auto;
+  height: min(30vw, 200px);
   object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
@@ -106,4 +107,65 @@ footer {
   color: var(--txtclr);
   border-top: 1px solid #222;
   margin-top: 4rem;
+}
+
+/* Lightbox overlay */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.9);
+}
+
+/* Lightbox image */
+.lightbox-img {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 80%;
+  animation: fadeIn 0.3s;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Arrows */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  user-select: none;
+  transform: translateY(-50%);
+}
+
+.prev { left: 20px; }
+.next { right: 20px; }
+
+.prev:hover, .next:hover, .close:hover {
+  color: #ccc;
 }

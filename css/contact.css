@@ -1,5 +1,16 @@
 /* contact.css */
 
+a {
+  text-decoration: none;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 8px;
+  color: var(--txtclr);
+}
+
 .contact-info {
   max-width: 800px;
   margin: 40px auto;
@@ -34,10 +45,6 @@
   font-size: 1.1rem;
   color: var(--txtclr);
   text-decoration: none;
-}
-
-.info-block a:hover {
-  text-decoration: underline;
 }
 
 .download-button {
